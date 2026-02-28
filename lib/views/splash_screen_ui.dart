@@ -51,9 +51,9 @@ class _SplashScreenUiState extends State<SplashScreenUi> {
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(255, 238, 0, 0), // (0xFFE5E5E5),
+                color: const Color.fromARGB(255, 238, 0, 0),
               ),
-            )
+            ),
           ],
         )),
       ),

@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iot_cake_fast_app/models/Cake_Shop.dart';
-import 'package:flutter_iot_cake_fast_app/models/cake_shop.dart';
+import 'package:flutter_iot_cake_fast_app/models/cake_shop.dart' hide CakeShop;
 
 class CakShopListUi extends StatefulWidget {
   const CakShopListUi({super.key});
