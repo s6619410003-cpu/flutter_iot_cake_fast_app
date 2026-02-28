@@ -194,7 +194,7 @@ class _CakShopListUiState extends State<CakShopListUi> {
                     ),
                     trailing: Icon(
                       Icons.info,
-                      color: Colors.red[700],
+                      color: const Color.fromARGB(255, 225, 13, 13),
                     ),
                   );
                 },
