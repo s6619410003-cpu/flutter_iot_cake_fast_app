@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iot_cake_fast_app/models/Cake_Shop.dart';
-import 'package:flutter_iot_cake_fast_app/models/cake_shop.dart' hide CakeShop;
+import 'package:flutter_iot_cake_fast_app/views/cake_shop_detail_ui.dart';
 
 class CakShopListUi extends StatefulWidget {
   const CakShopListUi({super.key});
@@ -179,7 +179,16 @@ class _CakShopListUiState extends State<CakShopListUi> {
                 },
                 itemBuilder: (context, index) {
                   return ListTile(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CakeShopDetailUi(
+                            cakeShopDetail: cakeShops[index],
+                          ),
+                        ),
+                      );
+                    },
                     leading: ClipRRect(
                       borderRadius: BorderRadius.circular(5),
                       child: Image.asset(
